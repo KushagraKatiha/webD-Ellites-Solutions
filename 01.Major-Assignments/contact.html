@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            background-color: #230505;
+            color: #ffffff;
+        }
+    </style>
+    <title>Contact</title>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th>
+                <!-- Logo Image -->
+                <img src="./assets/logo-img.png" alt="logo">
+            </th>
+            <th>
+                <!-- Navigation Bar -->
+                <nav>
+                    <span><a href="./main.html">Home</a></span>
+                    <span><a href="./about.html">About</a></span>
+                    <span><a href="./contact.html">Contact</a></span>
+                </nav>
+            </th>
+            <th>
+                <!-- User Login Avatar -->
+                <img style="width: 50px;" src="./assets/circle-user-solid.svg" alt="user">
+            </th>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Get in touch with me</h1>
+    <p>Fille up the below from and I will be in touch with you !!</p>
+
+    <form action="GET">
+        <fieldset>
+            <legend>Fill Your Details Here !!!</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Your Name" value="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Your Email" value="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" placeholder="Your Message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Contact Reason:</label></td>
+                    <td>
+                        <input type="checkbox" id="complaint" name="reason" value="complaint">
+                        <label for="complaint">Complaint</label>
+                        <br>
+                        <input type="checkbox" id="donation" name="reason" value="donation">
+                        <label for="donation">Donation</label>
+                        <br>
+                        <input type="checkbox" id="suggestion" name="reason" value="suggestion">
+                        <label for="suggestion">Suggestion</label>
+                        <br>
+                        <input type="checkbox" id="other" name="reason" value="other">
+                        <label for="other">Other</label>
+                        <br>
+                        <span>Select multiple reasons if applicable.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="status">Current Status:</label></td>
+                    <td>
+                        <select id="status" name="status">
+                            <option value="school">School Student</option>
+                            <option value="college">College Student</option>
+                            <option value="job">Employed</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="birthday">Birthday:</label></td>
+                    <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="image">Upload Image:</label></td>
+                    <td><input type="file" id="image" name="image" accept="image/*"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
